@@ -13,9 +13,10 @@
 }
 
 .darkmode {
-  --base-color: #111528;
-  --highlight-color: #161b33;
-  --text-color: white;
+  --base-color: rgb(19, 28, 40);
+  --highlight-color:rgb(69, 74, 78);
+  --text-color: rgb(234, 223, 217);
+  --second-color: rgb(48, 52, 56); 
 }
 
 body {
@@ -52,7 +53,7 @@ body {
 /* Footer */
 footer {
   margin-top: auto;
-  padding: 20px;
+  padding: 24px;
   text-align: center;
   background-color: var();
 }
@@ -67,12 +68,8 @@ footer {
   max-width: 120px; /* Optional: Maximalbreite setzen */
   background: none;
   border: none;
-  padding: 10px;
+  padding: 8px;
   cursor: pointer;
-}
-.footer-button button img {
-  width: 34px;
-  height: 34px;
 }
 
 
