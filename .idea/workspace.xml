@@ -1,48 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a394d049-0d4d-466d-94f0-b0a6f2cd166e" name="Changes" comment="" />
+    <list default="true" id="56097615-8b3f-4513-a052-1bf894a085e6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.img/add_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.img/add_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.img/dark_mode_24dp_000000_FILL1_wght400_GRAD0_opsz24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.img/home_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.img/home_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.img/light_mode_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.img/restaurant_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.img/restaurant_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.img/settings_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.img/settings_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/addNewDish.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/darkmode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dishlist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dishlist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dishlist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/dishlist.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/indexeddb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/settings.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/settings.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
-  <component name="ProjectId" id="2xExQgvy5lmMZXpDOcdbRzz1YKB" />
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2xlyoLJa0cOxj0x4DcxXeiK4M8G" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "AnalyzeApkAction.lastApkPath": "C:/Users/timro/OneDrive/Dev/VS Code/Projekte/mealmatch/mealmatch.app",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/timro/OneDrive/Dev/VS Code/Projekte/mealmatch.app/android/app"
   }
 }]]></component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.159" />
-        <option value="bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159" />
-      </set>
-    </attachedChunks>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a394d049-0d4d-466d-94f0-b0a6f2cd166e" name="Changes" comment="" />
-      <created>1747517021277</created>
+      <changelist id="56097615-8b3f-4513-a052-1bf894a085e6" name="Changes" comment="" />
+      <created>1748527128416</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1747517021277</updated>
-      <workItem from="1747517022729" duration="40000" />
+      <updated>1748527128416</updated>
     </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
 </project>
