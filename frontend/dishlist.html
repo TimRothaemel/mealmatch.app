@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="dishlist.css" />
+  <script type="text/javascript" src="darkmode.js" defer></script>
+  <script type="text/javascript" src="dishlist.js"></script>
+  <script type="text/javascript" src="indexeddb.js"></script>
+</head>
+
+<body>
+
+
+  <button class="add-meal-button" id="open-modals"> Gerichte hinzufügen</button>
+
+
+
+
+
+
+
+
+
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <form id="add-dish-form">
+
+        <button> <a href="addNewDish.html">
+            Neues Gericht
+          </a>
+        </button>
+
+        <table id="dishlist">
+
+        </table>
+      </form>
+    </div>
+  </div>
+
+
+
+  <footer>
+    <a href="settings.html">
+      <div class="footer-button">
+        <button>
+          <div id="theme-switch">
+            <img src=".img\settings_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
+            <img src=".img\settings_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" />
+                    </div>
+        </button>
+    </a>
+    <a href="index.html">
+      <button>
+        <div id="theme-switch">
+          <img src=".img\home_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
+          <img src=".img\home_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" />
+        </div>
+      </button>
+    </a>
+    <a href="dishlist.html">
+      <button>
+        <div id="theme-switch">
+          <img src=".img\restaurant_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" />
+          <img src=".img\restaurant_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" />
+        </div>
+      </button>
+    </a>
+    </div>
+  </footer>
+</body>
+
+</html>

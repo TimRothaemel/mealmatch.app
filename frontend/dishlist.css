@@ -1,0 +1,38 @@
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: var(--base-color);
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 8px;
+  right: 24px;
+  font-size: 28px;
+  cursor: pointer;
+}
+.add-meal-button{
+    background: var(--highlight-color);
+    padding: 16px 16px 16px 16px;
+    color: var(--text-color);
+    font-size: 24px;
+}

@@ -1,0 +1,76 @@
+/* Allgemeine Stile */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+:root {
+  --base-color: #F7F7F7;
+  --highlight-color: #8BC34A;
+  --text-color: #333333;
+  --second-color: #34A8FF;
+}
+
+.darkmode {
+  --base-color: #2F2F2F;
+  --highlight-color:#4CAF50;
+  --text-color: #FFFFFF;
+  --second-color: #66D9EF; 
+}
+
+body {
+  background-color: var(--base-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+
+
+/* Theme Switch*/
+
+#theme-switch img {
+  width: 34px;
+  height: 34px;
+}
+
+#theme-switch img:last-child {
+  display: none;
+}
+
+.darkmode #theme-switch img:first-child {
+  display: none;
+}
+
+.darkmode #theme-switch img:last-child {
+  display: block;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  padding: 24px;
+  text-align: center;
+  background-color: var();
+}
+.footer-button {
+  display: flex;
+  justify-content: space-around; /* Gleichmäßige Verteilung */
+  align-items: center;
+  width: 100%;
+}
+.footer-button button {
+  flex-grow: 1; /* Jedes Element nimmt gleich viel Platz ein */
+  max-width: 120px; /* Optional: Maximalbreite setzen */
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+
