@@ -15,9 +15,9 @@
 
 .darkmode {
   --base-color: #2F2F2F;
-  --highlight-color:#4CAF50;
+  --highlight-color: #4CAF50;
   --text-color: #FFFFFF;
-  --second-color: #66D9EF; 
+  --second-color: #66D9EF;
 }
 
 body {
@@ -59,19 +59,22 @@ footer {
   text-align: center;
   background-color: var();
 }
+
 .footer-button {
   display: flex;
-  justify-content: space-around; /* Gleichmäßige Verteilung */
+  justify-content: space-around;
+  /* Gleichmäßige Verteilung */
   align-items: center;
   width: 100%;
 }
+
 .footer-button button {
-  flex-grow: 1; /* Jedes Element nimmt gleich viel Platz ein */
-  max-width: 120px; /* Optional: Maximalbreite setzen */
+  flex-grow: 1;
+  /* Jedes Element nimmt gleich viel Platz ein */
+  max-width: 120px;
+  /* Optional: Maximalbreite setzen */
   background: none;
   border: none;
   padding: 8px;
   cursor: pointer;
 }
-
-

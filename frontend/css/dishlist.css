@@ -1,4 +1,3 @@
-
 /* Modal */
 .modal {
   display: none;
@@ -30,9 +29,11 @@
   font-size: 28px;
   cursor: pointer;
 }
-.add-meal-button{
-    background: var(--highlight-color);
-    padding: 16px 16px 16px 16px;
-    color: var(--text-color);
-    font-size: 24px;
+
+.add-meal-button {
+  background: var(--highlight-color);
+  padding: 16px 16px 16px 16px;
+  color: var(--text-color);
+  font-size: 24px;
+  padding-top: 48px;
 }

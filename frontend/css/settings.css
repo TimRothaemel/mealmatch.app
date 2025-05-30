@@ -3,7 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%; /* Anpassen je nach Bedarf */
+  width: 100%;
+  /* Anpassen je nach Bedarf */
   padding: 16px;
   padding-top: 48px;
 }
@@ -56,11 +57,11 @@
 }
 
 /* Zustand: Aktiviert */
-input:checked + .slider {
+input:checked+.slider {
   background-color: var(--text-color);
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   transform: translateX(26px);
 }
 

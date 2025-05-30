@@ -1,22 +1,23 @@
-document.addEventListener("DOMContentLoaded", function () {
+import { Filesystem, Directory, Encoding } from '@capacitor/filesystem';
+
+document.addEventListener("DOMContentLoaded", async function () {
   const modal = document.getElementById("modal");
   const openModalButton = document.getElementById("open-modals");
   const closeModalButton = document.querySelector(".close");
   const form = document.getElementById("add-dish-form");
   const dishNameInput = document.getElementById("dish-name");
+  const dishTableBody = document.getElementById("dish-table-body");
 
   let dishes = [];
   let editId = null;
 
-  if (modal) {
-    modal.style.display = "none";
-  }
+  if (modal) modal.style.display = "none";
 
   // Modal öffnen
   if (openModalButton) {
     openModalButton.addEventListener("click", () => {
       editId = null;
-      if (dishNameInput) dishNameInput.value = "";
+      dishNameInput.value = "";
       modal.style.display = "flex";
     });
   }
@@ -28,9 +29,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Gericht speichern (nur im Array)
+  // Klick außerhalb des Modals
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+  // Gericht speichern
   if (form) {
-    form.addEventListener("submit", (event) => {
+    form.addEventListener("submit", async (event) => {
       event.preventDefault();
       const dishName = dishNameInput?.value.trim();
       if (!dishName) {
@@ -44,12 +52,54 @@ document.addEventListener("DOMContentLoaded", function () {
         dishes.push(dishName);
       }
 
-      console.log("Gerichte:", dishes); // zu Testzwecken
-
       dishNameInput.value = "";
       modal.style.display = "none";
 
-      // Hier später renderDishes() oder Export-Funktion einbauen
+      await saveDishes();
+      renderDishes();
     });
   }
+
+  async function saveDishes() {
+    try {
+      await Filesystem.writeFile({
+        path: 'dishlist.json',
+        data: JSON.stringify(dishes),
+        directory: Directory.Data,
+        encoding: Encoding.UTF8,
+      });
+    } catch (err) {
+      console.error("Fehler beim Speichern:", err);
+    }
+  }
+
+  async function loadDishes() {
+    try {
+      const result = await Filesystem.readFile({
+        path: 'dishlist.json',
+        directory: Directory.Data,
+        encoding: Encoding.UTF8,
+      });
+      dishes = JSON.parse(result.data);
+      renderDishes();
+    } catch (err) {
+      dishes = [];
+    }
+  }
+
+  function renderDishes() {
+    if (!dishTableBody) return;
+    dishTableBody.innerHTML = "";
+
+    dishes.forEach((dish, index) => {
+      const row = document.createElement("tr");
+      const cell = document.createElement("td");
+      cell.textContent = dish;
+      row.appendChild(cell);
+      dishTableBody.appendChild(row);
+    });
+  }
+
+  // Initial
+  await loadDishes();
 });

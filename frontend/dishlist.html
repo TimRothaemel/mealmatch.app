@@ -1,4 +1,4 @@
-public\<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -16,34 +16,25 @@ public\<!DOCTYPE html>
 
 
   <button class="add-meal-button" id="open-modals"> Gerichte hinzufügen</button>
+<table id="dish-table">
+  <thead>
+    <tr><th>Gericht</th></tr>
+  </thead>
+  <tbody></tbody>
+</table>
 
 
-
-
-
-
-
-
-
-
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-
-      <form id="add-dish-form">
-
-        <button> <a href="addNewDish.html">
-            Neues Gericht
-          </a>
-        </button>
-
-        <table id="dishlist">
-
-        </table>
-      </form>
-    </div>
+  <div id="modal" style="display: none;" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form id="add-dish-form">
+      <input type="text" id="dish-name" placeholder="Gericht">
+      <button type="submit">Speichern</button>
+    </form>
   </div>
-  
+</div>
+
+
   <footer>
     <div class="footer-button">
       <a href="settings.html">
