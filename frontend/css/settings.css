@@ -5,6 +5,7 @@
   justify-content: space-between;
   width: 100%; /* Anpassen je nach Bedarf */
   padding: 16px;
+  padding-top: 48px;
 }
 
 /* Beschriftung des Schalters */

@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/TimRothaemel/mealmatch.app/issues"
   },
-  "homepage": "https://github.com/TimRothaemel/mealmatch.app#readme"
+  "homepage": "https://github.com/TimRothaemel/mealmatch.app#readme",
+  "dependencies": {
+    "@capacitor/status-bar": "^7.0.1"
+  }
 }
