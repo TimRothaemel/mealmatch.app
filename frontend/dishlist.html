@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="css\style.css" />
   <link rel="stylesheet" href="css\dishlist.css" />
   <script type="text/javascript" src="js\darkmode.js" defer></script>
-  <script type="text/javascript" src="js\dishlist.js" defer></script>
-  <script type="text/javascript" src="js\modal.js" defer></script> 
+  <script type="module" src="js\storage.js" defer></script>
+  <script type="text/javascript" src="js\modal.js" defer></script>
+    <script type="module" src="js\data.js" defer></script> 
 </head>
 
 <body>
@@ -31,7 +32,11 @@
   </div>
 </div>
 
-
+ <script type="module">
+    document.getElementById('open-add-dish').addEventListener('click', () => {
+      window.location.href = 'addNewDish.html';
+    });
+  </script>
   <footer>
     <div class="footer-button">
       <a href="settings.html">

@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   const form = document.getElementById("add-dish-form");
   const dishInput = document.getElementById("dish-name");
   const tableBody = document.querySelector("#dish-table tbody");
+  const modal = document.getElementById("modal");
 
   let dishes = await loadDishes();
   renderDishes();
 
   form?.addEventListener("submit", async (e) => {
     e.preventDefault();
-
     const name = dishInput.value.trim();
     if (!name) return alert("Bitte einen Namen eingeben!");
 
@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     await saveDishes(dishes);
     renderDishes();
 
-    document.getElementById("modal").style.display = "none";
-    dishInput.value = "";
+    // Modal schließen, aber Modal-Logik bleibt in modal.js
+    modal.style.display = "none";
   });
 
   function renderDishes() {
