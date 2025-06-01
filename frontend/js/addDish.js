@@ -1,4 +1,5 @@
 import { loadDishes, saveDishes } from './storage.js';
+console.log(dishes)
 
 document.addEventListener('DOMContentLoaded', async () => {
   const form = document.getElementById('add-dish-form');

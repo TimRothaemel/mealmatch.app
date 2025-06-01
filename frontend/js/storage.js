@@ -1,4 +1,4 @@
-import { Filesystem, Directory, Encoding } from '@capacitor/filesystem';
+import { Filesystem, Directory, Encoding } from '/@capacitor/filesystem';
 
 let dishesCache = [];
 
@@ -11,9 +11,10 @@ export async function loadDishes() {
     });
     dishesCache = JSON.parse(result.data);
   } catch (e) {
-    // Datei existiert noch nicht oder Fehler, dann leeres Array
+    // Datei existiert noch nicht – leeres Array zurückgeben
     dishesCache = [];
   }
+
   return dishesCache;
 }
 
