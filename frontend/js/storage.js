@@ -1,4 +1,7 @@
-import { Filesystem, Directory, Encoding } from '/@capacitor/filesystem';
+const { Filesystem, Directory } = Capacitor.Plugins;
+
+
+
 
 let dishesCache = [];
 

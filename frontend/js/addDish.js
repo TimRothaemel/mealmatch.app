@@ -1,3 +1,5 @@
+let dishes = [];
+
 import { loadDishes, saveDishes } from './storage.js';
 console.log(dishes)
 
