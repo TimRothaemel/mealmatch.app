@@ -1,7 +1,4 @@
-const { Filesystem, Directory } = Capacitor.Plugins;
-
-
-
+const { Filesystem, Directory, Encodin } = Capacitor.Plugins;
 
 let dishesCache = [];
 
@@ -10,7 +7,7 @@ export async function loadDishes() {
     const result = await Filesystem.readFile({
       path: 'dishlist.json',
       directory: Directory.Data,
-      encoding: Encoding.UTF8
+      encoding: 'utf8'
     });
     dishesCache = JSON.parse(result.data);
   } catch (e) {
@@ -28,7 +25,7 @@ export async function saveDishes(dishes) {
       path: 'dishlist.json',
       data: json,
       directory: Directory.Data,
-      encoding: Encoding.UTF8
+      encoding:  'utf8'
     });
     dishesCache = dishes; // Cache aktualisieren
   } catch (e) {
